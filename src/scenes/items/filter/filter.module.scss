@@ -1,0 +1,203 @@
+.filter{
+  width:200px;
+  height: fit-content;
+  margin-top: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.filterType{
+  margin-bottom: 10px;
+}
+
+.show{
+  height: 200px;
+}
+
+.hideEffect{
+  overflow: hidden;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+.showPanel{
+  max-height: 408+64px; 
+  border: 2px solid #000;
+}
+
+.hidePanel{
+  max-height: 0px; 
+  border: none
+}
+
+.showHidePanel{
+  display: flex;
+  width: 191px;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  border-radius: 5px;
+  p{
+    font-style: 18px;
+    margin-left: 10px;
+  }
+}
+
+.arrow{
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: all 0.2s;
+}
+
+.showArrow{
+  transform: rotate(90deg)
+}
+
+.hideArrow{
+  transform: rotate(-90deg)
+}
+
+.checkBlock{
+  width: 160px;
+  
+}
+
+.checkbox_input{
+  appearance: none;
+  position: absolute;
+  display: none;
+}
+
+
+.scroll{
+    max-height: 334px;
+    overflow: scroll;
+    border-radius: 5px;
+    padding: 10px 10px 0px 10px;
+  }
+  
+.scroll::-webkit-scrollbar{
+  cursor: pointer;
+  width: 7px;
+  height: 0px;
+  border-radius: 7px;
+  background-color: #d8d8d8;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+  background-color: rgb(135, 135, 135);
+  border-radius: 7px;
+  &:hover{
+    background-color: rgb(2, 2, 2);
+  }
+}
+
+.scroll::-webkit-scrollbar-thumb:hover{
+  width: 6px;
+}
+
+.checkbox_label {
+    display: block;
+    width: 100%;
+    height: 38px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox_label::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 5px;
+    z-index: 14;
+  }
+  
+  .checkbox_label::after {
+    content: "\2714";
+    display: none;
+    margin-top: -74px;
+    margin-left: 140px;
+    font-weight: bold;
+  }
+  
+  .checkbox_input:checked + .checkbox_label::before {
+    border: 3px solid;
+    z-index: 2;
+  }
+  
+  .checkbox_input:checked + .checkbox_label::after {
+    display: block;
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    height: 38px;
+    font-size: 18px;
+    position: relative;
+    top: -42px;
+    border: 1px;
+    padding-left: 5px;
+  }
+
+  .slider{
+    width: 140px;
+    overflow: hidden;
+  }
+
+  .text{
+    height: 100%;
+    position: relative;
+    top: 8px;
+    left: 10px;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  @import '../../../Index.module.scss';
+  @keyframes example {
+    from {transform: translate(0px, 0);}
+    to {transform: translate(-10px, 0);}
+  }
+  .textHover{
+    width: 100%;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+.search{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{  
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 10px;
+  top: -65.5px;
+  z-index: 1;
+}
+
+.button{
+  background-color: $colorButton;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+

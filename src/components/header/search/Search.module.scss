@@ -1,0 +1,133 @@
+.input{
+  width: 100px;
+  transition: all 0.2s ease;
+}
+
+.activeInput{
+  width: 500px;
+}
+
+.track{
+  width: 400px;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  margin-left: 35%;
+}
+
+.activeTrack{
+  margin-left: 45%;
+}
+
+.close{
+  transition: all 0.2s ease;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -24px;
+  border: none;
+  background-color: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2px;
+}
+  
+.flex_wrap_search{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.items_from_search::-webkit-scrollbar:horizontal{
+  display: none;
+}
+
+.search_panel{
+  display: none;
+  width: 540px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 2;
+  font-size: 20px;
+  border: none;
+  box-shadow: inset 0px 0px 5px #000;
+  border-radius: 0px 0px 5px 5px;
+  outline: none;
+  margin: -10px 0;
+  transition: all 0.2s ease;
+}
+
+
+.close_search {
+  background-color: #e59f67;
+  border-radius: 0 0 5px 5px;
+}
+
+.close_search button{
+  width: 100%;
+}
+
+.item{
+  margin: 10px;
+  p{
+    margin: 10px 0;
+    cursor: pointer;
+  }
+}
+
+.partition{
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+  box-shadow: 0 1px 5px #000;
+}
+
+.item_search:hover{
+  background-color: rgb(195, 195, 195);
+}
+
+.img_search img{
+  width: 50px;
+  height: 69px;
+  border-radius: 5px 0px 0px 5px;
+  margin-top: 0.5px;
+  margin-left: 1px;
+}
+
+
+.name_search{
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price_search{
+  color: rgb(153, 4, 4);
+  font-size: 25px;
+  margin: auto 10px auto 0;
+}
+
+.searhc_inpText{
+  width: 70%;
+}
+
+.button{
+  position: relative;
+  opacity: 0.3;
+  transform: scale(0.5);
+  top: 9px;
+  left: -34px;
+  border: none;
+  background-color: inherit;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+
+.search_close{
+  display: none;
+}
